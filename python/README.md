@@ -138,3 +138,8 @@ Traceback (most recent call last):
 ZeroDivisionError: division by zero
 [Finished in 0.1s]
 ```
+
+## Read More
+
+- [Python Errors HOWTO](https://docs.python.org/3/tutorial/errors.html)
+- [Python Logging HOWTO](https://docs.python.org/3/howto/logging.html)
