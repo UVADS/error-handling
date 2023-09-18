@@ -110,3 +110,31 @@ except Exception as e:
   sys.exit(1)
 
 ```
+
+### Stack Traces
+
+The `logging` module also allows you to capture stack traces into the log by passing the `exc_info` parameter
+as `True`:
+
+```python
+import logging
+
+x = 23
+y = 0
+
+try:
+  z = x / y
+except Exception as e:
+  logging.error("EXCEPTION", exc_info=True)
+
+```
+
+Which would result in the following log message:
+```
+ERROR:root:EXCEPTION
+Traceback (most recent call last):
+  File "logging-demo.py", line 7, in <module>
+    z = x / y
+ZeroDivisionError: division by zero
+[Finished in 0.1s]
+```
