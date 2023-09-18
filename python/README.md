@@ -59,7 +59,9 @@ installed. The `logging` package provides a `Logger` class that can be
 instantiated and used to log messages to a file. Here are the basic options:
 
 ### Level
-Decide the level of events you want to capture:
+Decide the level of events you want to capture. The level will be flagged in
+each line of your log, which is useful for future filtering and sorting.
+The developer can choose what level to use with each actual `logging` call:
 
 - Debug
 - Info
@@ -68,14 +70,13 @@ Decide the level of events you want to capture:
 - Critical
 
 ### Filename
-This should be the full path to your error log file.
+This is the full path to your error log file.
 
 ### Filemode
 The mode in which your `filename` is opened. The default is `a` for append.
 
 ### Format
-The format of the log message. This is a string that can contain select output
-from your code.
+The format of the log message. This is a string that can contain select output from your code.
 
 ```python
 import logging
@@ -85,7 +86,7 @@ logging.warning("This is a warning message in the log file")
 logging.error("LOOK OUT! This is an error!!")
 ```
 
-Results in an error log entry:
+The log results from above:
 ```
 2023-09-18 14:09:28,328 - WARNING - This is a warning
 2023-09-18 14:10:26,890 - ERROR - LOOK OUT! This is an error!!
@@ -129,7 +130,7 @@ except Exception as e:
 
 ```
 
-Which would result in the following log message:
+Which results in the following log message:
 ```
 ERROR:root:EXCEPTION
 Traceback (most recent call last):
