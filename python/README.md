@@ -142,5 +142,8 @@ ZeroDivisionError: division by zero
 
 ## Read More
 
+- [Error Handling with boto3 and AWS](aws-example.py)
+
+
 - [Python Errors HOWTO](https://docs.python.org/3/tutorial/errors.html)
 - [Python Logging HOWTO](https://docs.python.org/3/howto/logging.html)
