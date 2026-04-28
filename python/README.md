@@ -1,7 +1,7 @@
 # Error Handling & Logging in Python
 
-- [Errors & Exceptions]()
-- [Logging]()
+- [Errors & Exceptions](#errors--exceptions)
+- [Logging](#logging)
 
 ## Errors & Exceptions
 
@@ -281,7 +281,8 @@ ZeroDivisionError: division by zero
 
 ## Read More
 
-- [Error Handling with boto3 and AWS](aws-example.py)
+- [Error Handling with boto3 (generic AWS service)](aws-service-example.py)
+- [Error Handling with boto3 (Amazon SQS)](aws-sqs-example.py)
 
 
 - [Python Errors HOWTO](https://docs.python.org/3/tutorial/errors.html)
