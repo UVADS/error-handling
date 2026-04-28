@@ -50,8 +50,17 @@ except Exception as e:
   sys.exit(1)
 finally:
   return something
-
 ```
+
+> **About Exit Codes**
+> 
+> The Linux OS tracks the success and failure of processes using exit codes. These are represented by an integer, and typically `0` means "success". Therefore, non-zero exit codes can be used by developers to indicate a specific type of error/failure for their specific application. Which is to say there is no standard number that represents "error" - some developers use `1` or `99`, but given the variety of possible errors they may assign other values.
+>
+> A common example of this is HTTP response codes that we are used to seeing by now. `200` represents success, a `403` error typically means "not found", and so forth.
+>
+> The savvy developer may decide to output a specific error code such that another process can detect and act upon it.
+
+
 ### Exception Types
 
 The examples above use a default, catch-all `Exception` object that is called for all error types. Printing this to the screen (or logging)
