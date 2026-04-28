@@ -14,6 +14,6 @@ debugging in production possible at all.
 This repo collects templates and snippets for writing informative error
 handling and logging in a few common languages.
 
-- [Python](/python/README.md)
+- [`python`](/python/README.md)
 - [`bash`](/bash/README.md)
-- [Rust](/rust/README.md)
+- [`rust`](/rust/README.md)
