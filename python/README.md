@@ -1,6 +1,6 @@
 # Error Handling & Logging in Python
 
-## Error & Exception Handling
+## Errors & Exceptions
 
 ### Use `try` / `except` / `finally` for exceptions
 
