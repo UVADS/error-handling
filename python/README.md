@@ -15,9 +15,14 @@ Here is a simple framework:
 
 try:
   # do something
+  print("I just did something")
 except Exception as e:
-  # handle an error, where e is now an object for that error
+  # handle an error, where e is an object for that error
   # and Exception is a base class for all errors.
+  print("there was an error")
+finally:
+  # do something else regardless of try/except success.
+  print("all done")
 ```
 
 The `try` stanza, if successful, will continue to run your process.
@@ -40,7 +45,11 @@ except Exception as e:
   print(e)
 
   # stop the process and exit with a non-zero status
+  # even with the exit(1) call, the finally clause still
+  # executes.
   sys.exit(1)
+finally:
+  return something
 
 ```
 ### Exception Types
