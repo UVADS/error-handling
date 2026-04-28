@@ -16,3 +16,4 @@ handling and logging in a few common languages.
 
 - [Python](/python/README.md)
 - [`bash`](/bash/README.md)
+- [Rust](/rust/README.md)

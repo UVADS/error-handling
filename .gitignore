@@ -15,6 +15,10 @@ venv/
 env/
 .env
 
+# Rust build artifacts
+target/
+**/*.rs.bk
+
 # Logs produced by the examples
 *.log
 
