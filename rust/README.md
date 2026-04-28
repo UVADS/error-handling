@@ -139,5 +139,6 @@ distributed system.
 - [Result & Option basics](result_basic.rs)
 - [Custom error types with `thiserror`](custom_error.rs)
 - [Logging with `log` + `env_logger`](logging.rs)
+- [Mini-`curl` CLI — error handling and logging in concert](curl_clone.rs)
 - [The Rust Book — Error Handling](https://doc.rust-lang.org/book/ch09-00-error-handling.html)
 - [`thiserror`](https://docs.rs/thiserror/) · [`anyhow`](https://docs.rs/anyhow/) · [`log`](https://docs.rs/log/) · [`tracing`](https://docs.rs/tracing/)
