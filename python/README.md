@@ -59,6 +59,8 @@ finally:
 > A common example of this is HTTP response codes that we are used to seeing by now. `200` represents success, a `403` error typically means "not found", and so forth.
 >
 > The savvy developer may decide to output a specific error code such that another process can detect and act upon it.
+>
+> Within the Linux OS the status of the last process to complete can always be fetched using `$?`.
 
 
 ### Exception Types
